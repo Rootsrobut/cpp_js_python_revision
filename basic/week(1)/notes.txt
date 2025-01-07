@@ -1,0 +1,123 @@
+
+# Conversion	      C++	                  Python	        JavaScript
+# String to Int	stoi("123")	             int("123")	        Number("123")
+# Int to String	to_string(123)	         str(123)	        String(123)
+# Float to Int	(int)x or static_cast	 int(3.14)	       parseInt(3.14)
+# Int to Float	(float)x	             float(123)	       parseFloat(123)
+
+
+
+Arithmetic Operators
+
+Operator	     Description	      Example in All Languages
++	              Addition	                      a + b
+-	             Subtraction	                  a - b
+*	            Multiplication	                  a * b
+/	               Division	                      a / b
+%	               Modulus (Remainder)	          a % b
+**	              Exponentiation (Power)	      a ** b (JS, Python)
+//	              Floor Division (Python)	      a // b
+++	              Increment (C++ and JS)	     ++a or a++
+--	              Decrement (C++ and JS)	     --a or a--
+
+
+Division (/) in Python and JavaScript:
+
+It always results in a floating-point number, even if operands are integers.
+In C++, division with integers results in an integer (use floating-point types for precision).
+Modulus (%):
+
+Gives the remainder of a division.
+Exponentiation (**):
+
+Available in Python and JavaScript. In C++, use pow(base, exponent) from <cmath>.
+Increment and Decrement (++/--):
+
+Not available in Python. Instead, use += 1 or -= 1.
+
+Relational Operators
+
+
+Operator	      Description	             Example (a = 5, b = 3)
+==	               Equal to	                    a == b → false
+!=	              Not equal to	                a != b → true
+>	              Greater than	                a > b → true
+<	               Less than	                a < b → false
+>=	           Greater than or equal to	        a >= b → true
+<=	          Less than or equal to	            a <= b → false
+
+
+# Key Differences Across Languages
+
+# Strict Equality in JavaScript:
+# Use === to avoid type coercion (e.g., 5 === "5" is false).
+# == performs type coercion, so 5 == "5" is true.
+
+# Python Chained Comparisons:
+# Python allows comparisons like 1 < a < 10, which checks multiple conditions at once.
+# Boolean Results:
+
+# In C++, relational operators return 1 for true and 0 for false.
+# In Python and JavaScript, they return true or false.
+
+
+Logical Operators
+Operator	Description	                     Syntax Example
+&&	       Logical AND	                        a && b
+!	       Logical NOT	                          !a
+and	       Logical AND (Python only)	       a and b
+or	       Logical OR (Python only)	           a or b
+not	       Logical NOT (Python only)	        not a
+
+
+Key Differences Across Languages
+Syntax:
+
+JavaScript and C++ use &&, ||, and !.
+Python uses and, or, and not.
+
+Short-Circuit Evaluation:
+
+All three languages support short-circuit evaluation.
+In an AND operation, if the first condition is false, the second condition is not evaluated.
+In an OR operation, if the first condition is true, the second condition is not evaluated.
+
+Boolean Values:
+
+JavaScript: true and false.
+C++: 1 (true) and 0 (false).
+Python: True and False.
+
+
+
+the note can be written in C++, JavaScript, and Python:
+
+Integer Storage 
+
+Integers are commonly stored as signed 32-bit values.
+Positive integers are stored directly in binary.
+Negative integers are stored using 2's complement representation.
+
+Steps to calculate the 2's complement (Example: -4):
+
+Binary equivalent of 4: 00000000000000000000000000000100
+1's complement (invert bits): 11111111111111111111111111111011
+Add 1 to get 2's complement:
+11111111111111111111111111111100
+
+
+Float and Double Storage
+C++:
+float: 4 bytes
+double: 8 bytes
+Use the suffix f or F to declare floats explicitly.
+
+All numbers are stored as 64-bit floating-point (double).
+All floating-point numbers are stored as double-precision floats.
+
+
+Character Storage
+Each character has a unique ASCII value, which is stored as its binary equivalent in memory.
+Adding an integer to a character results in adding the ASCII value of the character to the integer.
+
+
