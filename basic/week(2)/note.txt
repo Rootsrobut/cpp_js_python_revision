@@ -1,0 +1,5 @@
+Type Declaration:
+
+C++: Variables need to be declared with their types (int, float, etc.).
+JavaScript: Variables are dynamically typed and can be declared using let, const, or var.
+Python: Also dynamically typed, and variables don’t need a type declaration.
