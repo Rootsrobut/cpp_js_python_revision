@@ -1,0 +1,43 @@
+JavaScript:
+for...of: Iterates over values (e.g., array elements).
+for...in: Iterates over keys (e.g., object properties).
+forEach: A method to iterate over array elements, with access to the element and index.
+
+
+Python:
+for: Directly iterates over the elements of an iterable (e.g., list or string).
+enumerate: Provides both index and element, like forEach in JS.
+items(): For dictionaries to iterate over key-value pairs.
+
+
+Bitwise Operators
+Operator	 Description	                    Example
+&	         Bitwise AND	                     a & b
+|		     Bitwise OR                          a | b
+^	         Bitwise XOR (exclusive OR)	         a ^ b
+~	         Bitwise NOT (one's complement)	      ~a
+<<	         Left shift	                         a << n
+>>	         Right shift	                     a >> n
+
+
+
+
+Operator	                                  Description	
+() [] . -> ++ --	                        Parentheses (function call), array subscripts, member selection via object name or pointer, postfix increment/decrement	
+++ -- + - ! ~	                            Prefix increment/decrement, unary plus/minus, logical negation, bitwise complement	
+(type)	                                    Type casting (convert value to temporary type)	
+*	                                        Dereference (pointer indirection)	
+&	                                        Address-of operator	
+sizeof	                                    Determine size in bytes	
+* / %	                                    Multiplication, division, modulus	
++ -	                                        Addition, subtraction	
+<< >>	                                    Bitwise shift left, bitwise shift right	
+< <= > >=	                                Relational operators (less than, greater than, etc.)	
+== !=	                                    Relational equality/inequality	
+&	                                        Bitwise AND	
+^	                                        Bitwise XOR	
+&&	                                        Logical AND	
+?:	                                        Ternary conditional operator	
+= += -= *= /= %=	                        Assignment and compound assignment operators	
+&= ^= `	= <<= >>=`	                        Compound assignment for bitwise and shift operations
+,	                                        Comma operator (separate expressions)	
