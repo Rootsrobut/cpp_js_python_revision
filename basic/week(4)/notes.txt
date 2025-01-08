@@ -16,3 +16,133 @@ Address Calculation	Based on data type size (4 bytes for int)	Abstracted	       
 
 C++ allows direct memory manipulation and address calculation, making it suitable for low-level programming.
 JavaScript and Python abstract memory management, focusing on flexibility and ease of use.
+
+
+
+
+
+JavaScript Array Methods
+=====================================
+
+Mutator Methods (Modify the original array):
+----------------------------------------------
+--------------------------------------------
+push() - Adds elements to the end of an array.
+pop() - Removes the last element of an array.
+shift() - Removes the first element of an array.
+unshift() - Adds elements to the beginning of an array.
+splice() - Adds/removes elements from the array at a specific position.
+reverse() - Reverses the order of elements in the array.
+sort() - Sorts the elements of an array.
+fill() - Fills elements in an array with a static value.
+copyWithin() - Copies a part of the array to another location within the same array.
+
+
+
+Accessor Methods (Do not modify the original array):
+
+
+concat() - Combines two or more arrays into a new array.
+slice() - Extracts a portion of an array into a new array.
+indexOf() - Returns the first index of a specified element.
+lastIndexOf() - Returns the last index of a specified element.
+includes() - Checks if the array contains a specified element.
+join() - Joins all elements into a string.
+toString() - Converts the array to a string.
+toLocaleString() - Converts the array to a localized string.
+
+
+Iteration Methods (Work on each element):
+
+
+forEach() - Executes a provided function on each array element.
+map() - Creates a new array with the results of calling a function on every element.
+filter() - Creates a new array with elements that pass the test of a provided function.
+reduce() - Reduces the array to a single value by applying a function.
+reduceRight() - Similar to reduce() but works from right to left.
+every() - Checks if all elements pass the test of a function.
+some() - Checks if at least one element passes the test of a function.
+find() - Returns the first element that satisfies the condition in a function.
+findIndex() - Returns the index of the first element that satisfies the condition.
+keys() - Returns an iterator containing the keys of the array.
+values() - Returns an iterator containing the values of the array.
+entries() - Returns an iterator containing key-value pairs of the array.
+
+
+
+
+in Python
+
+Mutator Methods (Modify the original list):
+
+append() - Adds an element to the end of the list.
+extend() - Extends the list by appending all elements from another list.
+insert() - Inserts an element at a specified position.
+remove() - Removes the first occurrence of a specified value.
+pop() - Removes and returns an element at a specified position (default is the last element).
+clear() - Removes all elements from the list.
+reverse() - Reverses the list in place.
+sort() - Sorts the list in ascending order (or with a custom key and reverse).
+
+
+Accessor Methods (Do not modify the original list):
+
+
+index() - Returns the first index of a specified value.
+count() - Counts the number of occurrences of a value in the list.
+Copying Methods:
+copy() - Returns a shallow copy of the list.
+list() - Converts an iterable to a list.
+
+
+
+Iteration and Functional Methods:
+
+
+len() - Returns the length of the list.
+max() - Returns the largest element of the list.
+min() - Returns the smallest element of the list.
+sum() - Returns the sum of all elements in the list.
+map() - Applies a function to every element (returns a map object; convert to list if needed).
+filter() - Filters elements based on a condition (returns a filter object; convert to list if needed).
+enumerate() - Returns an enumerate object with indices and elements.
+zip() - Combines elements from multiple iterables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript: Provides more advanced iteration methods like find(), findIndex(), and iterators like keys(), values(), and entries().
+Python: Focuses more on functional programming methods like map() and filter() with seamless integration into list comprehensions.
