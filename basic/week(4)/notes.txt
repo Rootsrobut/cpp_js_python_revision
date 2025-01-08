@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+In C++, you must specify the return type, whereas JavaScript and Python allow more flexibility due to their dynamic nature.
+
+Feature	                         C++	                      JavaScript	                       Python
+Contiguous Storage	             Yes	                          No                              	No
+Access via Address	  Possible using &array[index]	        Not accessible	                Not directly accessible (use id())
+Dynamic Resizing	             No	                             Yes                               	Yes
+Address Calculation	Based on data type size (4 bytes for int)	Abstracted	                Abstracted
+
+
+C++ allows direct memory manipulation and address calculation, making it suitable for low-level programming.
+JavaScript and Python abstract memory management, focusing on flexibility and ease of use.
