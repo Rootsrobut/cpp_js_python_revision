@@ -1,0 +1,78 @@
+
+# lambda an
+
+
+def double(x):
+   return x*2
+
+def appl(fx,value):
+   return 6 + fx(value)   
+
+double = lambda x: x*2
+cube = lambda x: x*x*x
+avg = lambda x,У,z: (x+y+z)/2
+
+print(double(5));
+print(cube(5));
+print(avg(3, 5));
+print(appl(lambda x: x * x * x,2))
+
+
+#map,fillter,reduce
+
+def cube(x):
+  return x*x*x;
+
+print(cube(2))
+l = [1,2,4,6,4,3]
+# newl = []
+# for item in l:
+#   newl.append(cube(item))
+
+newl = list(map(cube,l))
+print(newl)
+
+
+# FILTER
+def filter_function(a):
+    return a>2
+newnewl = list(filter(filter_function, l))
+print(newnewl)
+
+
+#reduce 
+from functools import reduce
+
+# List of numbers 
+numbers = [1,2,3,4,5,6,7,8,9]
+
+# Calculate the sum the reduce function 
+
+def mysum(x, y):
+   return x + y
+sum =reduce(mysum,numbers) <===============> result = reduce(lambda x, y: x + y, numbers)
+# Print the sum
+print(sum)
+
+
+
+# Define variables a and b
+a = 3
+b = 3
+
+# Check if a is equal to b
+print(a == b)  # This checks for equality (True)
+
+# Check if a and b are the same object in memory (identity comparison)
+print(a is b)  # This checks if both refer to the same object in memory (True for small integers like 3)
+
+# Modify a variable
+a = 4
+print(a == b)  # False, since a is now 4, and b is still 3
+
+# Check if a and b are the same object in memory
+print(a is b)  # False, since a and b now refer to different values and may not be the same object
+
+Key points about == and is in Python:
+== compares the values of two objects. If a == b, it means that the values are the same.
+is compares the memory locations (identity) of two objects. If a is b, it means both variables refer to the same object in memory.

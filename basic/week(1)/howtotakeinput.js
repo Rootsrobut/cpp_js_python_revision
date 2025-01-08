@@ -13,6 +13,52 @@
 // });
 
 
+// // Case 1: [1,2,3,4,5]
+// function inputArrayFormat() {
+//     let input = prompt().replace(/[\[\]]/g, ''); // Remove brackets
+//     let arr = input.split(',').map(Number);
+//     return arr;
+// }
+
+// // Case 2: 1 2 3 4 5
+// function inputSpaceSeparated() {
+//     let input = prompt();
+//     let arr = input.split(' ').map(Number);
+//     return arr;
+// }
+
+// // Case 3: 1,2,3,4,5
+// function inputCommaSeparated() {
+//     let input = prompt();
+//     let arr = input.split(',').map(Number);
+//     return arr;
+// }
+
+// // Case with size not given
+// function inputArraySizeNotGiven() {
+//     let arr = [];
+//     while (true) {
+//         let num = prompt();
+//         if (num === "") {
+//             break;
+//         }
+//         let numbers = num.split(' ').map(Number);
+//         arr = arr.concat(numbers);
+//     }
+//     return arr;
+// }
+
+// function inputArraySizeNotGiven2() {
+//     let input = prompt();
+//     let arr = input.split(' ').map(Number);
+//     return arr;
+// }
+
+// // Print the results
+// console.log(inputArrayFormat());
+// console.log(inputSpaceSeparated());
+// console.log(inputCommaSeparated());
+// console.log(inputArraySizeNotGiven2());
 
 // Datatype
 
