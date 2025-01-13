@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/cpp_python_js/basic/week(2)",
-      "program": "f:/cpp_python_js/basic/week(2)/build/Debug/outDebug",
+      "cwd": "f:/cpp_python_js/basic/week(5)",
+      "program": "f:/cpp_python_js/basic/week(5)/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
