@@ -49,14 +49,14 @@ int32_t main()
     // for(int i = 0;i<5;i++) v1.push_back(vector<int>(c));
 
 
-    vector<int> v2(5, 1);
-    int row, col;
-    cin >> row >> col;
-    vector<vector<int>> v3(row, vector<int>(col));
+    // vector<int> v2(5, 1);
+    // int row, col;
+    // cin >> row >> col;
+    // vector<vector<int>> v3(row, vector<int>(col));
 
     
 
-    vector<pair<int, char>> students;
+    // vector<pair<int, char>> students;
     // pair<int , char> p;
     // pair<int , char> p(10,'A');
     // pair<int , char> p = {10,'A'};
