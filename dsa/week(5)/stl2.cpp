@@ -5,42 +5,42 @@ using namespace std;
 int32_t main()
 {
 
-    stack<char> s;
-    s.push('a');
-    s.push('b');
-    s.push('c');
-    cout << s.top() << "\n";
-    s.pop();
+    // stack<char> s;
+    // s.push('a');
+    // s.push('b');
+    // s.push('c');
+    // cout << s.top() << "\n";
+    // s.pop();
 
-    if (!s.empty())
-        cout << "true" << "\n";
-    else
-        cout << "false" << "\n";
+    // if (!s.empty())
+    //     cout << "true" << "\n";
+    // else
+    //     cout << "false" << "\n";
 
-    while (!s.empty())
-    {
-        s.pop();
-    }
+    // while (!s.empty())
+    // {
+    //     s.pop();
+    // }
 
-    queue<int> q;
-    q.push(1);
-    q.push(2);
-    q.push(3);
-    q.pop();
-    cout << q.front() << endl;
-    cout << q.back() << endl;
-    cout << q.size() << endl;
+    // queue<int> q;
+    // q.push(1);
+    // q.push(2);
+    // q.push(3);
+    // q.pop();
+    // cout << q.front() << endl;
+    // cout << q.back() << endl;
+    // cout << q.size() << endl;
 
-    deque<int> dq;
+    // deque<int> dq;
 
-    dq.push_back(1);
-    dq.push_front(2);
-    dq.push_back(3);
-    dq.pop_front();
-    dq.pop_back();
+    // dq.push_back(1);
+    // dq.push_front(2);
+    // dq.push_back(3);
+    // dq.pop_front();
+    // dq.pop_back();
 
-    cout << dq.front() << "\n";
-    cout << dq.back() << "\n";
+    // cout << dq.front() << "\n";
+    // cout << dq.back() << "\n";
 
     // string s = "PARIKH";
     // string s1(s, 2, 4); // from index 2 upto 4 characters are copied to s1 from s
@@ -73,6 +73,8 @@ int32_t main()
     // else{
     //     cout<<"Element not found"<<endl;
     // }
+
+
 
     // int arr[] = {1, 2, 3, 4, 5, 6, 5};
     // map<int, int> m;

@@ -1,0 +1,38 @@
+Substring Operations:
+In both JavaScript and substring or slicing can extract parts of a string.
+In Python, slicing uses [start:end], while JavaScript uses substring(start, end).
+String Comparison:
+Use === in JavaScript for strict equality.
+Use == in Python for string equality.
+
+
+
+In both JavaScript and Python, Set is used to store unique values.
+In Python, set() is a built-in type, while JavaScript has a Set class.
+In both languages, adding elements to a set automatically removes duplicates.
+JavaScript uses a for...of loop for iterating over a Set.
+Python uses a for loop for iterating over a set.
+Use s.has(value) in JavaScript.
+Use value in s in Python.
+
+
+
+Map/Dictionaries:
+
+JavaScript uses a Map object for key-value pairs, while Python uses a dict.
+Use m.get(key, 0) in Python and (m.get(key) || 0) in JavaScript to handle missing keys when counting.
+In JavaScript, use a for...of loop with destructuring ([key, value]) to iterate over a Map.
+In Python, use for key, value in m.items() for dictionary iteration.
+
+Use m.delete(key) in JavaScript and del m[key] in Python.
+
+
+
+
+Priority Queues:
+
+Python uses heapq, which by default is a min-heap.
+JavaScript requires implementing custom priority queues since it doesn't have built-in support.
+Lists:
+Python uses deque for efficient appending/popping from both ends.
+JavaScript relies on array methods like push, unshift, pop, and shift.

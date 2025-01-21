@@ -1,35 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// void printpriorityqueue(priority_queue<int, vector<int>, greater<int>> pq)
-// {
-//     priority_queue<int, vector<int>, greater<int>> pq2 = pq;
-//     while (!pq.empty())
-//     {
-//         cout << pq.top() << "\n";
-//         pq.pop();
-//     }
-// }
+void printpriorityqueue(priority_queue<int, vector<int>, greater<int>> pq)
+{
+    priority_queue<int, vector<int>, greater<int>> pq2 = pq;
+    while (!pq.empty())
+    {
+        cout << pq.top() << "\n";
+        pq.pop();
+    }
+}
 
-// void printpriorityqueue1(priority_queue<int> pqr)
-// {
-//     priority_queue<int> pq2 = pqr;
-//     while (!pqr.empty())
-//     {
-//         cout << pqr.top() << "\n";
-//         pqr.pop();
-//     }
-// }
+void printpriorityqueue1(priority_queue<int> pqr)
+{
+    priority_queue<int> pq2 = pqr;
+    while (!pqr.empty())
+    {
+        cout << pqr.top() << "\n";
+        pqr.pop();
+    }
+}
 
-// void printlist(list<int> li)
-// {
-//     list<int>::iterator it;
-//     for (it = li.begin(); it != li.end(); it++)
-//     {
-//         cout << *it << " ";
-//     }
-//     cout << endl;
-// }
+void printlist(list<int> li)
+{
+    list<int>::iterator it;
+    for (it = li.begin(); it != li.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
 
 // struct Interval
 // {
