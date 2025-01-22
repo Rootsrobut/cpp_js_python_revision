@@ -72,5 +72,4 @@ int main()
 	s2 -> setAge(24);
 	s1.display();
 	s2 -> display();
-
 }

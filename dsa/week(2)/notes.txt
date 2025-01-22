@@ -1,0 +1,12 @@
+use # private fields/methods for true privacy, and follow naming conventions like _ for protected members.in js
+
+
+
+### Explanation:
+1. **Class Definition**: The `Student` class is defined with a private field `#age` to mimic the private member in C++.
+2. **Constructor**: The constructor handles different initialization scenarios similar to the C++ constructors.
+
+The `__init__` method serves as the constructor, and the `__del__` method serves as the destructor.
+The `if __name__ == "__main__":` block is used to execute the code when the script is run directly.
+In Python, the attributes __numerator and __denominator are private.
+In JavaScript, the # syntax is used to define private fields.
