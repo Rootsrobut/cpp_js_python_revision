@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 class Fraction {
 	private :
 
@@ -67,3 +69,15 @@ class Fraction {
 		}
 
 };
+int main() {
+	Fraction f1(10, 2);
+	Fraction f2(15, 4);
+
+	// const Fraction f3; 
+	Fraction const f3;  
+	// same same Both are equivalent for object declarations.
+	// Only const member functions like getNumerator() and getDenominator() can be called on it.
+	cout << f3.getNumerator() << " " << f3.getDenominator() << endl;
+	// f3.setNumerator(10);
+}
+

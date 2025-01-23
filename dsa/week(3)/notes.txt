@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+Aspect	                                         Copy Constructor	                                                     Assignment Operator
+
+Purpose	                           Creates a new object by copying another object.	          Copies the contents from one object to another existing object.
+
+When Called	                             Called during object initialization.	                        Called during assignment after initialization.
+
+Default Behavior	                    Provided by the compiler if not defined.	                      Provided by the compiler if not defined.
+
+Object State	                         Works on an uninitialized object.	                               Works on an already initialized object.
+
+Example Usage	                        MyClass obj2(obj1); MyClass obj2 = obj1;                                       obj2 = obj1;
+
+
+struct: In C++, members of a struct are public by default, and it is typically used for plain data structures.
+class: In C++, members of a class are private by default, and it is generally used for defining objects with encapsulation, methods, and access control.
+
+
+
+
+
+
+In struct inheritance, the default access specifier for base class members is public.
+In class inheritance, the default access specifier for base class members is private.
+
+
+
+
+
+

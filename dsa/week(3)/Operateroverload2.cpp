@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 class Fraction {
 	private :
 
@@ -63,12 +65,57 @@ class Fraction {
 			return (numerator == f2.numerator && denominator == f2.denominator);
 		}
 
-
 		void multiply(Fraction const &f2) {
 			numerator = numerator * f2.numerator;
 			denominator = denominator * f2.denominator;
 			
 			simplify();
 		}
+		// Pre-increment
+		Fraction& operator++() {
+			numerator = numerator + denominator;
+			simplify();
+			return *this;
+		}
 
 };
+
+
+int main() {
+	Fraction f1(10, 2);
+	Fraction f2(15, 4);
+
+	f1.print();
+	Fraction f3 = ++(++f1);
+	f1.print();
+	f3.print();
+
+	//++f1;
+	//f1.print();
+
+	/*
+	Fraction f3 = ++f1;
+	f1.print();
+	f3.print();
+	*/
+	/*
+	Fraction f3 = f1.add(f2);
+	Fraction f4 = f1 + f2;
+	f1.print();
+	f2.print();
+	f3.print();
+	f4.print();
+
+	Fraction f5 = f1 * f2;
+	f5.print();
+
+	if(f1 == f2) {
+		cout << "Equal" << endl;
+	}
+	else {
+		cout << "Not equal " << endl;
+		
+	}
+	*/
+}
+
