@@ -1,7 +1,31 @@
 #include <iostream>
 using namespace std;
-#include "Vehicle.cpp"
-#include "Car.cpp"
+class Vehicle {
+	public :
+		string color;
+
+		// Pure virtual fn
+	virtual void print() = 0;
+
+
+};
+
+
+class Car : public Vehicle {
+	public :
+		int numGears;
+
+
+
+
+		
+		void print() {
+			cout << "Car" << endl;
+		}
+
+
+};
+
 
 int main() {
 	Vehicle v;

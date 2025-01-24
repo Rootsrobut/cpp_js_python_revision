@@ -12,12 +12,10 @@ public:
 		this->numerator = numerator;
 		this->denominator = denominator;
 	}
-
 	void print()
 	{
 		cout << this->numerator << " / " << denominator << endl;
 	}
-
 	void simplify()
 	{
 		int gcd = 1;

@@ -1,3 +1,0 @@
-class Truck : public Vehicle {
-
-};

@@ -2,14 +2,14 @@ class Student:
     def __init__(self, age, name):
         self.age = age
         # Shallow copy: directly assign the reference
-        self.name = name
+        # self.name = name
         # Deep copy: explicitly create a new string
         self.name = ''.join([char for char in name]) 
     # Deep copy constructor
     @classmethod
     def copy(cls, student):
         return cls(student.age, ''.join([char for char in student.name]))
-        return cls(student.age, student.name)  # Same reference for `name
+        # return cls(student.age, student.name)  # Same reference for `name
     def display(self):
         print(f"{self.name} {self.age}")
 
@@ -17,6 +17,7 @@ class Student:
 name = "abcd"
 s1 = Student(20, name)
 s1.display()
+s3.display()
 
 # Create a deep copy of s1
 s2 = Student.copy(s1)

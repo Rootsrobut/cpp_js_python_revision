@@ -35,3 +35,23 @@ In class inheritance, the default access specifier for base class members is pri
 
 
 
+Destructor:
+
+JavaScript uses garbage collection, so we use a destroy() method to manually nullify resources.
+Python has __del__ for destructor functionality.
+
+
+Shallow and Deep Copy:
+In JavaScript, shallow and deep copy logic is handled through explicit methods
+
+
+In Python, similar custom methods mimic the behavior.
+
+sizeof Alternative:
+JavaScript uses length for arrays.
+Python uses len() for lists.
+
+const members function in 
+Python and JavaScript do not have a direct equivalent for const objects or member functions.
+
+The simplify() method uses the Greatest Common Divisor (GCD), implemented using recursion in JavaScript and the math.gcd() function in Python.

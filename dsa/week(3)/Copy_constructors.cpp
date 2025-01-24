@@ -42,14 +42,14 @@ Book::Book(const Book &original){ //shallow copy
         Rates[0]=5;
         Rates[1]=4;
 }
-// Book::Book(const Book &original){ //deep copy
-//        Title=original.Title;
-//         Author=original.Author;
-//         RatesCounter=original.RatesCounter;
-//         Rates=new float[original.RatesCounter];
-//         Rates[0]=5;
-//         Rates[0]=4;
-// }
+Book::Book(const Book &original){ //deep copy
+       Title=original.Title;
+        Author=original.Author;
+        RatesCounter=original.RatesCounter;
+        Rates=new float[original.RatesCounter];
+        Rates[0]=5;
+        Rates[0]=4;
+}
 
 
 
@@ -58,7 +58,7 @@ int main(){
     Book book2("Millionaire","M.J. DeMarco");
     book2.display();
     
-    
+
 
     Book book3(book2);
     book3.display();
