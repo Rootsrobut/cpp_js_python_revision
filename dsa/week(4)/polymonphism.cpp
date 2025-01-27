@@ -1,8 +1,11 @@
 // Polymorphism is generally of two types:
 
 
-// Compile-time polymorphism
+// 1. Compile-time polymorphism
+// 2. Run-time polymorphism
 
+
+// 1. Compile-time polymorphism
 // Function Overloading and Operator Overloading
 
 
