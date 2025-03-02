@@ -17,20 +17,17 @@ public:
     }
 };
 template <typename T>
-class Stack
-{
+class Stack{
     Node<T> *head;
     Node<T> *tail;
     int size; // number of elements present in stack
 public:
-    Stack() // Constructor to initialize the head and tail to nullptr and size to zero
-    {
+    Stack() {
         head = nullptr;
         tail = nullptr;
         size = 0;
     }
-    int getSize() // return the size of the stack
-    {
+    int getSize(){
         return size;
     }
     bool isEmpty() // Check if the stack is empty
