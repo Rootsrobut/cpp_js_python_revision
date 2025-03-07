@@ -21,7 +21,7 @@ public:
          return size;
     }
     bool  isEmpty() {
-        return size==0
+        return size==0;
 
     }
     void enqueue(T element){
@@ -49,6 +49,7 @@ public:
             return 0; 
         }
         T ans=data[firstIndex];
+        data[firstIndex]=0
         firstIndex=(firstIndex+1)%capacity;
         size--;
         if(size==0){

@@ -2,37 +2,47 @@
 using namespace std;
 
 template <typename T>
-class QueueUsingArray {
-    T* data;
+class QueueUsingArray
+{
+private:
+    T *data;
     int nextIndex;
     int firstIndex;
     int size;
     int capacity;
 public:
-    QueueUsingArray(int cap) {
+    QueueUsingArray(int cap)
+    {
         data = new T[cap];
         nextIndex = 0;
         firstIndex = -1;
         size = 0;
         capacity = cap;
     }
-    ~QueueUsingArray() {
+    ~QueueUsingArray()
+    {
         delete[] data;
     }
-    int getSize() {
+    int getSize()
+    {
         return size;
     }
-    bool isEmpty() {
+    bool isEmpty()
+    {
         return size == 0;
     }
-    void enqueue(T element) {
-        if (size == capacity) {
-            T* newdata = new T[2 * capacity];
+    void enqueue(T element)
+    {
+        if (size == capacity)
+        {
+            T *newdata = new T[2 * capacity];
             int j = 0;
-            for (int i = firstIndex; i < capacity; i++) {
+            for (int i = firstIndex; i < capacity; i++)
+            {
                 newdata[j++] = data[i];
             }
-            for (int i = 0; i < firstIndex; i++) {
+            for (int i = 0; i < firstIndex; i++)
+            {
                 newdata[j++] = data[i];
             }
             delete[] data;
@@ -43,40 +53,47 @@ public:
         }
         data[nextIndex] = element;
         nextIndex = (nextIndex + 1) % capacity;
-        if (firstIndex == -1) {
+        if (firstIndex == -1)
+        {
             firstIndex = 0;
         }
         size++;
     }
-    T dequeue() {
-        if (isEmpty()) {
+    T dequeue()
+    {
+        if (isEmpty())
+        {
             cout << "Queue is empty!\n";
-            return T(); 
+            return T();
         }
         T removedElement = data[firstIndex];
         firstIndex = (firstIndex + 1) % capacity;
         size--;
-        if (size == 0) {
+        if (size == 0)
+        {
             firstIndex = -1;
             nextIndex = 0;
         }
         return removedElement;
     }
-    T front() {
-        if (isEmpty()) {
+    T front()
+    {
+        if (isEmpty())
+        {
             cout << "Queue is empty!\n";
-            return T(); 
+            return T();
         }
         return data[firstIndex];
     }
 };
 
-int main() {
+int main()
+{
     QueueUsingArray<int> q(3);
     q.enqueue(10);
     q.enqueue(20);
     q.enqueue(30);
-    q.enqueue(40); 
+    q.enqueue(40);
     cout << "Front: " << q.front() << endl;
     cout << "Dequeued: " << q.dequeue() << endl;
     cout << "Size: " << q.getSize() << endl;
