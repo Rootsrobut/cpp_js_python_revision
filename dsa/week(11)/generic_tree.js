@@ -22,7 +22,6 @@ function takeInput() {
             await recursiveInput(childNode);
         }
     }
-
     return new Promise(async (resolve) => {
         const rootData = await askQuestion('Enter data\n');
         const root = new TreeNode(parseInt(rootData));
@@ -51,16 +50,13 @@ function takeInputLevelWise() {
         input: process.stdin,
         output: process.stdout
     });
-
     function askQuestion(query) {
         return new Promise(resolve => readline.question(query, ans => resolve(ans)));
     }
-
     return new Promise(async (resolve) => {
         const rootData = await askQuestion('Enter a rootdata\n');
         const root = new TreeNode(parseInt(rootData));
         const queue = [root];
-
         while (queue.length !== 0) {
             const front = queue.shift();
             const numChildren = await askQuestion(`Enter number of children for ${front.data}\n`);
@@ -71,7 +67,6 @@ function takeInputLevelWise() {
                 queue.push(childNode);
             }
         }
-
         readline.close();
         resolve(root);
     });
